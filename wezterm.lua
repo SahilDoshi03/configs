@@ -153,7 +153,7 @@ else
       hsb = {
         hue = 1.0,
         saturation = 1.02,
-        brightness = 0.35,
+        brightness = 0.55,
       },
     },
     {
@@ -162,7 +162,7 @@ else
       },
       width = "100%",
       height = "100%",
-      opacity = 0.60,
+      opacity = 0.70,
     },
   }
 end

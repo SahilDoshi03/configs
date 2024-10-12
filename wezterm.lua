@@ -20,10 +20,10 @@ end
 config.color_scheme = "Catppuccin Macchiato"
 config.font = wezterm.font("0xProto Nerd Font Mono")
 config.window_padding = {
-  top = 10,
+  top = 40,
   bottom = 0,
-  left = 10,
-  right = 10,
+  left =40,
+  right =40,
 }
 
 -- tmux
@@ -127,7 +127,7 @@ if is_windows then
   config.background = {
     {
       source = {
-        File = "C:\\Users\\LSPL370\\Desktop\\wallpaper.jpg",
+        File = "C:\\Users\\LSPL370\\Desktop\\wallpaper-blur.jpg",
       },
       hsb = {
         hue = 1.0,
@@ -148,7 +148,7 @@ else
   config.background = {
     {
       source = {
-        File = "/Users/sahildoshi/Desktop/wallpaper.png",
+        File = "/Users/sahildoshi/Desktop/wallpaper-blur.png",
       },
       hsb = {
         hue = 1.0,

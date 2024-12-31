@@ -26,6 +26,10 @@ config.window_padding = {
   right =40,
 }
 
+config.window_decorations = "RESIZE"
+
+config.native_macos_fullscreen_mode = true
+
 -- tmux
 config.leader = { key = "j", mods = "CTRL", timeout_milliseconds = 2000 }
 config.keys = {

@@ -107,7 +107,7 @@ alias ta="tmux attach"
 alias sps="sudo pacman -S"
 alias conz="nvim ~/.zshrc"
 alias sourcez="source ~/.zshrc"
-alias hyprc="nvim /home/sahil/.config/hypr/hyprland.conf"
+alias hyprc="nvim $HOME/.config/hypr/hyprland.conf"
 
 bindkey -s ^h "tmux-sessionizer\n"
 

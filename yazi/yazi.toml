@@ -1,5 +1,13 @@
 [opener]
 edit = [
-	{ run = 'nvim "$0"', block = true, for = "unix" },
+  { run = 'nvim "$0"', block = true, for = "unix" },
+]
+open = [
+  { run = 'libreoffice --calc "$0"', block = false, for = "unix"} 
 ]
 
+[open]
+prepend_rules = [
+	{ name = "*.xls", use = "open" },
+	{ name = "*.xlsx", use = "open" },
+]

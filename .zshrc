@@ -108,6 +108,7 @@ alias sps="sudo pacman -S"
 alias conz="nvim ~/.zshrc"
 alias sourcez="source ~/.zshrc"
 alias hyprc="nvim $HOME/.config/hypr/hyprland.conf"
+alias syu="sudo pacman -Syu"
 
 bindkey -s ^h "tmux-sessionizer\n"
 

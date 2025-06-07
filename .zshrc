@@ -125,6 +125,9 @@ function y() {
 # zoxide
 eval "$(zoxide init zsh)"
 
+# github ssh in keychain
+eval $(keychain --quiet --eval SahilDoshi03 sahil-dsh)
+
 # nvm
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

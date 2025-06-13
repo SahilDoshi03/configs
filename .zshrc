@@ -103,12 +103,13 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/macos.zsh
 
 alias cd="z"
+alias lg="lazygit"
 alias ta="tmux attach"
 alias sps="sudo pacman -S"
 alias conz="nvim ~/.zshrc"
 alias sourcez="source ~/.zshrc"
-alias hyprc="nvim $HOME/.config/hypr/hyprland.conf"
-alias syu="sudo pacman -Syu"
+alias hyprc="nvim /home/sahil/.config/hypr/hyprland.conf"
+alias rs="docker run -d -p 6379:6379 redis"
 
 bindkey -s ^h "tmux-sessionizer\n"
 
@@ -124,9 +125,6 @@ function y() {
 
 # zoxide
 eval "$(zoxide init zsh)"
-
-# github ssh in keychain
-eval $(keychain --quiet --eval SahilDoshi03 sahil-dsh)
 
 # nvm
 export NVM_DIR="$HOME/.config/nvm"

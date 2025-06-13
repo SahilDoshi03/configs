@@ -109,6 +109,10 @@ alias conz="nvim ~/.zshrc"
 alias sourcez="source ~/.zshrc"
 alias hyprc="nvim $HOME/.config/hypr/hyprland.conf"
 alias syu="sudo pacman -Syu"
+alias cgit='eval "$(keychain --eval sahil-dsh)"'
+alias pgit='eval "$(keychain --eval SahilDoshi03)"'
+alias crem='ssh-add -d ~/.ssh/sahil-dsh'
+alias prem='ssh-add -d ~/.ssh/SahilDoshi03'
 
 bindkey -s ^h "tmux-sessionizer\n"
 
@@ -124,9 +128,6 @@ function y() {
 
 # zoxide
 eval "$(zoxide init zsh)"
-
-# github ssh in keychain
-eval $(keychain --quiet --eval SahilDoshi03 sahil-dsh)
 
 # nvm
 export NVM_DIR="$HOME/.config/nvm"

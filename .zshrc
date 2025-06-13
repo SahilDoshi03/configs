@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/macos.zsh
 
 alias cd="z"
+alias lg="lazygit"
 alias ta="tmux attach"
 alias sps="sudo pacman -S"
 alias conz="nvim ~/.zshrc"
@@ -113,6 +114,7 @@ alias cgit='eval "$(keychain --eval sahil-dsh)"'
 alias pgit='eval "$(keychain --eval SahilDoshi03)"'
 alias crem='ssh-add -d ~/.ssh/sahil-dsh'
 alias prem='ssh-add -d ~/.ssh/SahilDoshi03'
+alias rs="docker run -d -p 6379:6379 redis"
 
 bindkey -s ^h "tmux-sessionizer\n"
 

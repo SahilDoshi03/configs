@@ -115,6 +115,9 @@ alias pgit='eval "$(keychain --eval SahilDoshi03)"'
 alias crem='ssh-add -d ~/.ssh/sahil-dsh'
 alias prem='ssh-add -d ~/.ssh/SahilDoshi03'
 alias rs="docker run -d -p 6379:6379 redis"
+alias syss="systemctl start"
+alias sysr="systemctl reload"
+alias syst="systemctl status"
 
 bindkey -s ^h "tmux-sessionizer\n"
 

@@ -43,6 +43,8 @@ vim.keymap.set("n", "<leader><leader>", function()
   vim.cmd("so")
 end)
 
+vim.keymap.set("n", "<leader>rh", ":noh<CR>")
+
 -- copy the diagnostic messages (error, warnings) etc
 vim.keymap.set('n', '<leader>e', function()
   local d = vim.diagnostic.get(0, { lnum = vim.fn.line('.') - 1 })

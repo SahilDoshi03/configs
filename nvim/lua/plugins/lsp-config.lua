@@ -12,11 +12,13 @@ return {
         ensure_installed = {
           "lua_ls",
           "ts_ls",
-          "jsonls", "graphql",
+          "jsonls",
+          "graphql",
           "pylsp",
           "gopls",
           "cssls",
-          "sqlls"
+          "postgres_lsp",
+          "prismals"
         },
       })
     end,
@@ -48,7 +50,8 @@ return {
       lspconfig.jsonls.setup({ capabilities = capabilities, on_attach = on_attach })
       lspconfig.cssls.setup({ capabilities = capabilities, on_attach = on_attach })
       lspconfig.gopls.setup({ capabilities = capabilities, on_attach = on_attach })
-      lspconfig.sqlls.setup({ capabilities = capabilities, on_attach = on_attach })
+      lspconfig.prismals.setup({ capabilities = capabilities, on_attach = on_attach })
+      lspconfig.postgres_lsp.setup({ capabilities = capabilities, on_attach = on_attach })
     end,
   }
 }

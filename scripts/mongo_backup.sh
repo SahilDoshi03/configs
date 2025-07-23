@@ -12,7 +12,12 @@ JSON_EXPORT_PATH="$DUMP_PATH/$COLLECTION.json"
 
 mkdir -p "$DUMP_PATH"
 
-mongoexport --host "$MONGO_HOST" --port "$MONGO_PORT" --db "$DB_NAME" --collection "$COLLECTION" --out "$JSON_EXPORT_PATH" --jsonArray
-
-notify-send 'Backup Created Successfully'
+if mongoexport --host "$MONGO_HOST" --port "$MONGO_PORT" \
+  --db "$DB_NAME" --collection "$COLLECTION" \
+  --out "$JSON_EXPORT_PATH" --jsonArray; then
+  notify-send 'Mongo Backup' 'Backup Created Successfully'
+else
+  notify-send 'Mongo Backup' '❌ Backup Failed'
+  exit 1
+fi
 

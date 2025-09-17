@@ -36,3 +36,7 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#7F849C" })
+vim.api.nvim_set_hl(0, "SignColumn", { fg = "#7F849C" })
+vim.api.nvim_set_hl(0, "NeoTreeWinSeparator", { fg = "#7F849C" })

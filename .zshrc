@@ -112,12 +112,17 @@ alias hyprc="nvim $HOME/.config/hypr/hyprland.conf"
 alias syu="sudo pacman -Syu"
 alias cgit='eval "$(keychain --eval sahil-dsh)"'
 alias pgit='eval "$(keychain --eval SahilDoshi03)"'
+alias kgit='eval "$(keychain --eval kd)"'
 alias crem='ssh-add -d ~/.ssh/sahil-dsh'
 alias prem='ssh-add -d ~/.ssh/SahilDoshi03'
+alias krem='ssh-add -d ~/.ssh/ks'
 alias rs="docker run -d -p 6379:6379 redis"
 alias syss="systemctl start"
 alias sysr="systemctl reload"
 alias syst="systemctl status"
+alias startvenv="source venv/bin/activate"
+alias startcore="uvicorn main:app --reload --host 0.0.0.0 --port 8000"
+alias startbackend="source venv/bin/activate && uvicorn main:app --reload --host 0.0.0.0 --port 8000"
 
 bindkey -s ^h "tmux-sessionizer\n"
 
@@ -146,3 +151,11 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/lspl370/Desktop/projects/web-client/google-cloud-sdk/path.zsh.inc' ]; then . '/home/lspl370/Desktop/projects/web-client/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/lspl370/Desktop/projects/web-client/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/lspl370/Desktop/projects/web-client/google-cloud-sdk/completion.zsh.inc'; fi
+source ~/google-cloud-sdk/path.zsh.inc
+source ~/google-cloud-sdk/completion.zsh.inc

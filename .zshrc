@@ -2,16 +2,16 @@
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/.local/bin:/usr/local/go/bin:$HOME/.local/scripts:$PATH"
-export HYPRSHOT_DIR="$HOME/Pictures/screenshots"
-export XDG_PICTURES_DIR="$HOME/Pictures/screenshots"
+# export ZSH="$HOME/.oh-my-zsh"
+# export PATH="$HOME/.local/bin:/usr/local/go/bin:$HOME/.local/scripts:$PATH"
+# export HYPRSHOT_DIR="$HOME/Pictures/screenshots"
+# export XDG_PICTURES_DIR="$HOME/Pictures/screenshots"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,13 +73,13 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
-VI_MODE_CURSOR_NORMAL=2
-VI_MODE_CURSOR_VISUAL=6
-VI_MODE_CURSOR_INSERT=6
-VI_MODE_CURSOR_OPPEND=0
-
-source $ZSH/oh-my-zsh.sh
+# plugins=(git vi-mode)
+# VI_MODE_CURSOR_NORMAL=2
+# VI_MODE_CURSOR_VISUAL=6
+# VI_MODE_CURSOR_INSERT=6
+# VI_MODE_CURSOR_OPPEND=0
+#
+# source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -124,7 +124,7 @@ alias startvenv="source venv/bin/activate"
 alias startcore="uvicorn main:app --reload --host 0.0.0.0 --port 8000"
 alias startbackend="source venv/bin/activate && uvicorn main:app --reload --host 0.0.0.0 --port 8000"
 
-bindkey -s ^h "tmux-sessionizer\n"
+bindkey -s '^h' "tmux-sessionizer\n"
 
 # yazi
 function y() {

@@ -14,11 +14,29 @@ return {
         filesystem = {
           follow_current_file = { enabled = true, leave_dirs_open = false },
         },
+        commands = {
+          diff_view = function(state)
+            local node = state.tree:get_node()
+            vim.cmd("DiffviewOpen -- " .. node.path)
+          end
+        },
+        git_status = {
+          window = {
+            mappings = {
+              ["A"] = "git_add_all",
+              ["gu"] = "git_unstage_file",
+              ["ga"] = "git_add_file",
+              ["gr"] = "git_revert_file",
+              ["gc"] = "git_commit",
+              ["gp"] = "git_push",
+              ["gg"] = "git_commit_and_push",
+              ["<CR>"] = "diff_view",
+            }
+          }
+        }
       })
 
-      vim.keymap.set("n", "<leader>tn", ":tabnext<CR>")
       vim.keymap.set("n", "<leader>tr", ":Neotree filesystem reveal left<CR>")
-      vim.keymap.set("n", "<leader>tp", ":tabprevious<CR>")
     end,
   },
 }

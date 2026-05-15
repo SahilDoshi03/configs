@@ -3,7 +3,7 @@
 # This template file has been automatically created at the following
 # path since Ghostty couldn't find any existing config files on your system:
 #
-#   /home/lspl370/.config/ghostty/config
+#   /home/sahil/.config/ghostty/config
 #
 # The template does not set any default options, since Ghostty ships
 # with sensible defaults for all options. Users should only need to set
@@ -38,3 +38,5 @@ background-opacity = 0.85
 background-blur = 10
 
 scrollback-limit = 10000
+
+confirm-close-surface = false

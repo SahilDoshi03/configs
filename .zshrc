@@ -145,7 +145,7 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # pnpm
-export PNPM_HOME="/home/lspl370/.local/share/pnpm"
+export PNPM_HOME="/home/sahil/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -153,9 +153,9 @@ esac
 # pnpm end
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/lspl370/Desktop/projects/web-client/google-cloud-sdk/path.zsh.inc' ]; then . '/home/lspl370/Desktop/projects/web-client/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/home/sahil/Desktop/projects/web-client/google-cloud-sdk/path.zsh.inc' ]; then . '/home/sahil/Desktop/projects/web-client/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/lspl370/Desktop/projects/web-client/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/lspl370/Desktop/projects/web-client/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/home/sahil/Desktop/projects/web-client/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/sahil/Desktop/projects/web-client/google-cloud-sdk/completion.zsh.inc'; fi
 source ~/google-cloud-sdk/path.zsh.inc
 source ~/google-cloud-sdk/completion.zsh.inc

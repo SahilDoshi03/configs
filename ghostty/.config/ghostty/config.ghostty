@@ -1,0 +1,7 @@
+window-padding-x = 2
+window-padding-y = 2
+theme = Catppuccin Frappe
+
+scrollback-limit = 10000
+
+confirm-close-surface = false
